@@ -11,11 +11,11 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      height: auto;
+      height: 100vh;
       background: url('imag to website-05.jpg') no-repeat top center;
       background-size: cover;
     }
-
+    
     .triangle {
       position: absolute;
       /* Position: 1/6 from left edge */
@@ -25,16 +25,16 @@
       /* Triangle dimensions: width twice the height */
       width: 0;
       height: 0;
-      border-top: 3vh solid transparent;   /* 高度隨螢幕高度 */
-      border-bottom: 3vh solid transparent;
-      border-left: 2vw solid white;        /* 寬度隨螢幕寬度 */
+      border-top: 2vh solid transparent;   /* 高度隨螢幕高度 */
+      border-bottom: 2vh solid transparent;
+      border-left: 1.5vw solid black;        /* 寬度隨螢幕寬度 */
       cursor: pointer;
     }
   </style>
 </head>
 <body>
   <!-- Audio element -->
-  <audio id="audioPlayer" src="https://raw.githubusercontent.com/mwymaisy/mocc-chapter2.io/05_birds.mp3"></audio>
+  <audio id="audioPlayer" src="05_birds.mp3"></audio>
 
   <!-- Clickable triangle overlay -->
   <div class="triangle" onclick="document.getElementById('audioPlayer').play()"></div>
